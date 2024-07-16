@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>2024智能算法应用挑战赛 复赛 题目+题解</title>
+      <link href="/2024/07/15/2024ceic-rd2.html"/>
+      <url>/2024/07/15/2024ceic-rd2.html</url>
+      
+        <content type="html"><![CDATA[<h2 id="题面"><a href="#题面" class="headerlink" title="题面"></a>题面</h2><h3 id="1-求解连续-5-相加之和"><a href="#1-求解连续-5-相加之和" class="headerlink" title="1, 求解连续 5 相加之和"></a>1, 求解连续 5 相加之和</h3><h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>输入一个整数 n，表示有 n 个由 5 组成的不同的数字，分别是 5、55、555、…、</p><p>n 个 5，编写程序，求这 n 个数字的相加之和是多少？n 是一个不大于 10000 的正整</p><p>数。</p><p>例如：输入 n&#x3D;2，则相当于 5+55&#x3D;60，则输出 60；当输入 n&#x3D;4 时，相当于 5+55+555</p><p>+5555&#x3D;6170，则输出 6170 。</p><h4 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入共 1 行，每行为一个正整数 n。</p><h4 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出共 1 行，一个整数，表示 n 个数字相加之和</p><h4 id="数据范围"><a href="#数据范围" class="headerlink" title="数据范围"></a>数据范围</h4><p>0 &lt;&#x3D; n &lt;&#x3D; 10000 (n∈Z)</p><h3 id="2-黑色星期五"><a href="#2-黑色星期五" class="headerlink" title="2,黑色星期五"></a>2,黑色星期五</h3><h4 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h4><p>西方人也有不喜欢的数字，那就是数字 13，很多西方人认为数字 13 不吉利，同</p><p>时也不太喜欢星期五。据说之所以不喜欢 13 和星期五，是因为与基督教有关系，例</p><p>如耶稣遇难日就是星期五。因此，当 13 和星期 5 遇到一起，被称为黑色星期五。请</p><p>编写一程序，输入一个年份数 n（0 &lt; n &lt; 5000），输出公元第 n 年里黑色星期五的天</p><p>数。</p><h4 id="输入格式-1"><a href="#输入格式-1" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入一行，只有一个正整数，表示要求解的年份。</p><h4 id="输出格式-1"><a href="#输出格式-1" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一行，一个整数，表示输入的年份数中有几个黑色星期五。</p><h4 id="测试样例"><a href="#测试样例" class="headerlink" title="测试样例"></a>测试样例</h4><h5 id="样例一"><a href="#样例一" class="headerlink" title="#样例一"></a>#样例一</h5><h6 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2024</span><br></pre></td></tr></table></figure><h6 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure><h5 id="样例解释"><a href="#样例解释" class="headerlink" title="样例解释"></a>样例解释</h5><p>2024年有两个黑色星期五，分别是9月13日和12月13日</p><h4 id="数据范围-1"><a href="#数据范围-1" class="headerlink" title="数据范围"></a>数据范围</h4><p>0 &lt; n &lt; 5000 (n∈Z)</p><h3 id="3-整数的算术平方根"><a href="#3-整数的算术平方根" class="headerlink" title="3,整数的算术平方根"></a>3,整数的算术平方根</h3><h4 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h4><p>已知一个数 n，x 是 n 的算术平方根，即 x 是非负数，且 x*x&#x3D;n。请编写一个程</p><p>序，输入两个数，第一个数是要求解算术平方根的正整数 n，另一个数 m，表示</p><p>算术平方根小数点后保留到第 m 位（m 是 0 或者小于 10000 的正整数，注意，最后一</p><p>位不需要进行四舍五入）。</p><p>输出为一个数，</p><p>如果 x 是一个小数，则保留到小数点后的 m 位为止(不需要四舍五入)；</p><p>如果 x 是一个整数，则直接输出整数 x </p><p>如：输入第一个数为 2，则计算 2 的算术平方根，因为它是一个无限不循环小数，则</p><p>只输出到小数点后 m 位为止就行，假设输入的第二个数 m 为 10，则最终的输出：</p><p>1.4142135623。</p><h4 id="输入格式-2"><a href="#输入格式-2" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入共两行，</p><p>第一行 是一个正整数 n；</p><p>第二行为一个整数 m，m 是 0 或 正整数。</p><h4 id="输出格式-2"><a href="#输出格式-2" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一行，表示算术平方根数，如果算术平方根是整数则直接输出，如果是小</p><p>数，则输出小数点后 m 位的整个数，包括整数部分、小数点和小数点后 m 位数。</p><h4 id="测试样例-1"><a href="#测试样例-1" class="headerlink" title="测试样例"></a>测试样例</h4><h5 id="样例一-1"><a href="#样例一-1" class="headerlink" title="#样例一"></a>#样例一</h5><h6 id="输入-1"><a href="#输入-1" class="headerlink" title="输入"></a>输入</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">2</span><br></pre></td></tr></table></figure><h6 id="输出-1"><a href="#输出-1" class="headerlink" title="输出"></a>输出</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">1.1412135623</span><br></pre></td></tr></table></figure><h5 id="样例解释-1"><a href="#样例解释-1" class="headerlink" title="样例解释"></a>样例解释</h5><p>样例一中，计算 n &#x3D; 2 的算术平方根，因为它是一个无限不循环小数，故</p><p>只输出到小数点后 m &#x3D; 10 位，最终的输出：1.4142135623。</p><h4 id="数据范围-2"><a href="#数据范围-2" class="headerlink" title="数据范围"></a>数据范围</h4><p>n,x &gt; 0, m &gt;&#x3D; 0 (n,m∈Z, x∈R)</p><h3 id="4-求圆周率Π"><a href="#4-求圆周率Π" class="headerlink" title="4,求圆周率Π"></a>4,求圆周率Π</h3><h4 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h4><p>我们知道圆周率派Π，是一个无线不循环小数，请编写一个程序，求解圆周率</p><p>Π，对于给定的整数 n，求Π的小数点后第 n 位的数字。圆周率Π&#x3D;3.1415926…，例</p><p>如，输入：4，输出：5，表示小数点后的第 4 位是 5；输入：5，输出：9.</p><h4 id="输入格式-3"><a href="#输入格式-3" class="headerlink" title="输入格式"></a>输入格式</h4><p>输入一行一个正整数 n，表示圆周率后小数点后的第 n 位。</p><h4 id="输出格式-3"><a href="#输出格式-3" class="headerlink" title="输出格式"></a>输出格式</h4><p>输出一行，一个正整数 x，表示圆周率派Π的小数点后第 n 位对应的数字。</p><h4 id="测试样例-2"><a href="#测试样例-2" class="headerlink" title="测试样例"></a>测试样例</h4><h5 id="样例一-2"><a href="#样例一-2" class="headerlink" title="#样例一"></a>#样例一</h5><h6 id="输入-2"><a href="#输入-2" class="headerlink" title="输入"></a>输入</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">4</span><br></pre></td></tr></table></figure><h6 id="输出-2"><a href="#输出-2" class="headerlink" title="输出"></a>输出</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure><h5 id="样例二"><a href="#样例二" class="headerlink" title="#样例二"></a>#样例二</h5><h6 id="输入-3"><a href="#输入-3" class="headerlink" title="输入"></a>输入</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5</span><br></pre></td></tr></table></figure><h6 id="输出-3"><a href="#输出-3" class="headerlink" title="输出"></a>输出</h6><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">9</span><br></pre></td></tr></table></figure><h4 id="数据范围-3"><a href="#数据范围-3" class="headerlink" title="数据范围"></a>数据范围</h4><p>n &gt;&#x3D; 0, 0 &lt;&#x3D; x &lt;&#x3D; 9 (n,x∈Z)</p><h2 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h2><h3 id="T1"><a href="#T1" class="headerlink" title="T1"></a>T1</h3><p>(待补)</p><h3 id="T2"><a href="#T2" class="headerlink" title="T2"></a>T2</h3><p>(待补)</p><h3 id="T3"><a href="#T3" class="headerlink" title="T3"></a>T3</h3><p>(待补)</p><h3 id="T4"><a href="#T4" class="headerlink" title="T4"></a>T4</h3><p>(待补)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Algorithm </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 题解,复赛,正式比赛 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>2024智能算法应用挑战赛 初赛 编程选择题-题解</title>
       <link href="/2024/05/25/2024cebj-coding-md.html"/>
       <url>/2024/05/25/2024cebj-coding-md.html</url>
@@ -20,7 +45,7 @@
       
         <tags>
             
-            <tag> 题解 </tag>
+            <tag> 题解,初赛,正式比赛 </tag>
             
         </tags>
       
